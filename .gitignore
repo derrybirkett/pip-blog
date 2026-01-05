@@ -1,0 +1,14 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# OS
+.DS_Store
+
+# PIP organism
+.pip/
