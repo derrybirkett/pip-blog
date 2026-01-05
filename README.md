@@ -32,6 +32,8 @@ bundle install
 bundle exec jekyll serve
 ```
 
+Published URL: https://derrybirkett.github.io/pip-blog/
+
 ## Notes
 
 - This repo intentionally owns site content and presentation.

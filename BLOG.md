@@ -5,7 +5,7 @@ This repository includes a Jekyll-powered blog that's automatically deployed to 
 ## View the Blog
 
 Once deployed, the blog will be available at:
-**https://derrybirkett.github.io/pip/**
+**https://derrybirkett.github.io/pip-blog/**
 
 ## Local Development
 
@@ -19,6 +19,7 @@ bundle install
 bundle exec jekyll serve
 
 # View at http://localhost:4000/pip/
+# View at http://localhost:4000/pip-blog/
 ```
 
 ## Writing Blog Posts
