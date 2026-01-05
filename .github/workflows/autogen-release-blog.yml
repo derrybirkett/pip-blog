@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: recursive
 
       - name: Generate post from changelog
         id: gen
@@ -26,7 +27,7 @@ jobs:
             before="$(git rev-parse HEAD~1)"
           fi
 
-          python3 ./bin/generate-release-blog-post.py \
+          python3 ./.pip/bin/generate-release-blog-post.py \
             --before "$before" \
             --after "${{ github.sha }}"
 

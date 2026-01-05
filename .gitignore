@@ -11,4 +11,4 @@ vendor/bundle/
 .DS_Store
 
 # PIP organism
-.pip/
+
