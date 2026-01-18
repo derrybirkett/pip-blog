@@ -72,7 +72,7 @@ jobs:
         id: gen
         run: |
           set -euo pipefail
-          before="$(git rev-parse origin/main)"
+          before="${{ steps.sig.outputs.old }}"
           after="${{ steps.sig.outputs.new }}"
 
           # Set the after commit for changelog parsing (using new submodule commit)
