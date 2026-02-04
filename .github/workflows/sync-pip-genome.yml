@@ -2,7 +2,7 @@ name: Sync .pip genome + autogen blog
 
 on:
   schedule:
-    - cron: "0 * * * *" # hourly
+    - cron: "0 0 * * 0" # weekly (Sunday at 00:00 UTC)
   workflow_dispatch:
 
 permissions:
