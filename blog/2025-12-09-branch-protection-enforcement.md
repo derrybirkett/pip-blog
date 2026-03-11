@@ -216,9 +216,9 @@ git commit --no-verify
 
 ## Resources
 
-- **[hooks/README.md](../hooks/README.md)** - Local hook documentation
-- **[docs/github-branch-protection.md](../docs/github-branch-protection.md)** - GitHub settings guide
-- **[WARP.md](../WARP.md)** - Complete workflow documentation
+- **[hooks/README.md](https://github.com/derrybirkett/pip/blob/main/hooks/README.md)** - Local hook documentation
+- **[docs/github-branch-protection.md](https://github.com/derrybirkett/pip/blob/main/docs/github-branch-protection.md)** - GitHub settings guide
+- **[CONTRIBUTING.md](https://github.com/derrybirkett/pip/blob/main/CONTRIBUTING.md)** - Complete workflow documentation
 
 ## What's Next
 

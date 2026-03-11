@@ -199,13 +199,13 @@ Static HTML with zero JavaScript by default means instant page loads.
 3. **Customize styling**: Edit `Layout.astro`
 4. **Deploy**: Choose Vercel, Netlify, or Docker
 
-See [fragment documentation](../fragments/astro-blog/README.md) for full details.
+See [fragment documentation](https://github.com/derrybirkett/pip/tree/main/fragments/astro-blog) for full details.
 
 ## Related Updates
 
-- [Changelog](../docs/changelog.md#2025-12-11--astro-blog-fragment)
-- [Fragments Guide](../docs/fragments-guide.md)
-- [Activity Log](../docs/activity-log.md)
+- [Changelog](https://github.com/derrybirkett/pip/blob/main/docs/changelog.md#2025-12-11--astro-blog-fragment)
+- [Fragments Guide](https://github.com/derrybirkett/pip/blob/main/docs/fragments-guide.md)
+- [Activity Log](https://github.com/derrybirkett/pip/blob/main/docs/activity-log.md)
 
 ---
 

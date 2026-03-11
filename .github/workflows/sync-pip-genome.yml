@@ -81,7 +81,9 @@ jobs:
           cd ..
           
           # Move generated post if it exists
-          if [ -f ".pip/_posts/"*".md" ]; then
+          shopt -s nullglob
+          posts=(.pip/_posts/*.md)
+          if [ "${#posts[@]}" -gt 0 ]; then
             post_path=$(ls -t .pip/_posts/*.md | head -n1)
             cp "$post_path" "_posts/$(basename "$post_path")"
             mkdir -p blog

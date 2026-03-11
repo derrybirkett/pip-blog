@@ -22,14 +22,15 @@ jobs:
       - name: Generate post from changelog
         id: gen
         run: |
-          before="${{ github.event.before }}"
-          if [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ]; then
-            before="$(git rev-parse HEAD~1)"
-          fi
+          set -euo pipefail
+          # SHAs must reference the .pip submodule repo, not the outer repo.
+          # Use the submodule's own HEAD and its parent as the diff range.
+          after="$(git -C .pip rev-parse HEAD)"
+          before="$(git -C .pip rev-parse HEAD~1 2>/dev/null || echo "$after")"
 
           python3 ./.pip/bin/generate-release-blog-post.py \
             --before "$before" \
-            --after "${{ github.sha }}"
+            --after "$after"
 
       - name: Create PR
         if: steps.gen.outputs.created == 'true'

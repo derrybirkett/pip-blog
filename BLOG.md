@@ -18,7 +18,6 @@ bundle install
 # Run Jekyll server
 bundle exec jekyll serve
 
-# View at http://localhost:4000/pip/
 # View at http://localhost:4000/pip-blog/
 ```
 
@@ -47,7 +46,7 @@ Content here...
 ```
 .
 ├── _config.yml          # Jekyll configuration
-├── index.md             # Blog homepage
+├── index.html           # Blog homepage
 ├── _posts/              # Jekyll posts directory (auto-synced from blog/)
 ├── blog/                # Source blog posts (markdown)
 ├── Gemfile              # Ruby dependencies
@@ -58,8 +57,8 @@ Content here...
 
 The blog automatically deploys to GitHub Pages when changes are merged to `main`:
 1. GitHub Actions builds the Jekyll site
-2. Site is deployed to `gh-pages` branch
-3. Available at https://derrybirkett.github.io/pip/
+2. Site is deployed to GitHub Pages via GitHub Actions
+3. Available at https://derrybirkett.github.io/pip-blog/
 
 ## Setup (One-Time)
 
